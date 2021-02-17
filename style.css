@@ -1,0 +1,100 @@
+/*estilos gerais*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.btn {
+  border: 3px solid #86cac9;
+  padding: 10px 30px;
+  color: #86cac9;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.btn:hover {
+  color: teal;
+  border-color: teal;
+}
+/*header*/
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #86cac9;
+  padding: 15px 0;
+  z-index: 10;
+}
+.header_menu {
+  text-align: right;
+}
+
+.header_menu ul li {
+  text-align: right;
+  display: inline-block;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+.header_menu ul li a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 0; /*aumento da margem para clique*/
+}
+.header_menu ul li a:hover {
+  color: teal; /* mudar a cor ao passar o mouse*/
+}
+
+/*introducao*/
+.introducao {
+  width: 100%;
+  height: 380px; /*tamanho da foto*/
+  text-align: center;
+  background: url("../img-bolo/bolo\ \(7\).jfif") no-repeat /*center*/;
+  background-size: cover;
+  margin-top: 96px;
+}
+
+.introducao h1 {
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.quote-externo {
+  max-width: 320px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: white;
+}
+.quote-externo p {
+  font-style: italic;
+  text-align: center;
+}
+
+.quote-externo p::before,
+.quote-externo p::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: white;
+  margin: 14px auto 10px auto; /* tracinho de estilo*/
+}
+.quote-externo cite {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
